@@ -18,7 +18,7 @@ const Tour = ({ tour, removeTour }) => {
                 <h5>${price}</h5>
                 <p id={`tour-item-para-${id}`}>
                     {showInfo ? info : `${info.substring(0, 200)}...`}
-                    <button onClick={toggleInfo}>
+                    <button id={`see-more-${id}`} onClick={toggleInfo}>
                         {showInfo ? "show less" : "Show more"}
                     </button>
                 </p>
