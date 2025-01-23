@@ -19,7 +19,7 @@ const Tour = ({ tour, removeTour }) => {
                 <p id={`tour-item-para-${id}`}>
                     {showInfo ? info : `${info.substring(0, 200)}...`}
                     <button id={`see-more-${id}`} onClick={toggleInfo}>
-                        {showInfo ? "Show less" : "Show more"}
+                        {showInfo ? "Show less" : "See more"}
                     </button>
                 </p>
                 <button id={`delete-btn-${id}`} onClick={() => removeTour(id)}>Not Interested</button>
