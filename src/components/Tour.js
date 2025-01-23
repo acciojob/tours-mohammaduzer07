@@ -7,12 +7,12 @@ const Tour = ({ tour, removeTour }) => {
 
 
     const toggleInfo = () => {
-        setShowInfo(!showInfo)
+        setShowInfo(!showInfo);
     }
 
     return (
-        <div className='tour'>
-            <img src={image} name={name}></img>
+        <article className='tour'>
+            <img src={image} name={name} />
             <div>
                 <h4>{name}</h4>
                 <h5>${price}</h5>
@@ -24,7 +24,7 @@ const Tour = ({ tour, removeTour }) => {
                 </p>
                 <button id={`delete-btn-${id}`} onClick={() => removeTour(id)}>Not Interested</button>
             </div>
-        </div>
+        </article>
     )
 }
 

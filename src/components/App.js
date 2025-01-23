@@ -26,18 +26,18 @@ const App = () => {
 
   return (
     <div id="main">
-      <h1>Tours</h1>
+    <h1>Tours</h1>
       {loading ? (
         <Loading />
       ) : tours.length === 0 ? (
         <div>
-          <p>No Tours left</p>
+          <p>No tours left</p>
           <button onClick={refreshTour}>Refresh</button>
         </div>
       ) : (
         <Tours tours={tours} removeTour={removeTour} />
       )}
     </div>
-  )
+  );
 }
 export default App;
